@@ -1,0 +1,153 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+  height: 100vh;
+  min-width: 375px;
+  background-color: var(--Cream);
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  height: 610px;
+  width: 340px;
+  background-color: var(--White);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card__img {
+  height: 250px;
+  background-image: url("../images/image-product-mobile.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.card__text {
+  padding: 25px 23px;
+}
+.card__header {
+  color: var(--Dark-grayish-blue);
+  font-size: 1.4em;
+  font-weight: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.card__title {
+  margin-top: 15px;
+  font-family: "Fraunces", serif;
+  font-size: 3.2em;
+  line-height: 1em;
+  color: var(--very-dark-blue);
+}
+.card__description {
+  margin-top: 20px;
+  font-size: 1.4em;
+  color: var(--Dark-grayish-blue);
+}
+.card__price {
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+  font-family: "Fraunces", serif;
+  font-size: 3.2em;
+  font-weight: bold;
+  color: var(--dark-cyan);
+}
+.card__old-price {
+  padding-left: 17px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  font-weight: normal;
+  text-decoration-line: line-through;
+  color: var(--Dark-grayish-blue);
+}
+.card__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  padding: 15px 0;
+  width: 100%;
+  font-size: 1.5em;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--dark-cyan);
+  color: var(--White);
+  transition: background-color 0.3s;
+}
+.card__btn__icon {
+  padding-right: 15px;
+}
+.card__btn:hover {
+  background-color: hsl(158, 60%, 23%);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+  .card {
+    display: flex;
+    height: 460px;
+    width: 620px;
+  }
+  .card__img {
+    height: 100%;
+    width: 310px;
+    background-image: url("../images/image-product-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .card__text {
+    padding: 30px;
+    width: 310px;
+  }
+  .card__header {
+    letter-spacing: 5px;
+  }
+  .card__title {
+    margin-top: 18px;
+    font-size: 3.3em;
+  }
+  .card__description {
+    font-size: 1.55em;
+    line-height: 1.5em;
+  }
+  .card__price {
+    margin-top: 25px;
+    font-size: 3.5em;
+  }
+  .card__btn {
+    margin-top: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */
