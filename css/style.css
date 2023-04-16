@@ -38,7 +38,7 @@ body {
 }
 .card__img {
   height: 250px;
-  background-image: url("../images/image-product-mobile.jpg");
+  background-image: url("../../images/image-product-mobile.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -124,7 +124,7 @@ body {
   .card__img {
     height: 100%;
     width: 310px;
-    background-image: url("../images/image-product-desktop.jpg");
+    background-image: url("../../images/image-product-desktop.jpg");
     background-position: center;
     background-size: cover;
   }
